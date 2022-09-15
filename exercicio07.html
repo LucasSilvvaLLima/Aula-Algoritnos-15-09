@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 07</title>
+</head>
+<body>
+    <h2>Times</h2>
+    <select name="" id="sel_time">
+        <option value="">Escolha um time</option>
+        <option value="img/corinthians.png">Corinthians</option>
+        <option value="img/palmeiras.png">Palmeiras</option>
+        <option value="img/santos.png">Santos</option>
+        <option value="img/São-Paulo.png">São Paulo</option>
+        </select>
+        <br><br>
+        <button onclick="ver_escudo()">Ver escudo</button>
+        <br><br>
+        <img src="" alt="" id="img_escudo" style="width: 200px;">
+</body>
+</html>
+
+<script>
+    function ver_escudo(){
+        img_escudo.src = sel_time.value
+    }
+</script>

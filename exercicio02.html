@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 02</title>
+</head>
+<body>
+    <h2> Simulador de idade de tempo para aposentadoria</h2>
+    <p>Digite quantos anos já trabalhou: <input type="text" id="in_trabalhou"></p>
+    <select name="" id="sel_trabalhou">
+        <option value="40">Funcionário de empresa privada</option>
+        <option value="35">Funcionário de empresa pública</option>
+        <option value="45">Empreendedor</option>
+    </select><br><br>
+    <button onclick="calcular()">Calcular aposentadoria</button>
+    <br><br>
+    <div id="div_aposentadoria"></div>
+</body>
+</html>
+
+<script>
+    function calcular(){
+        var anos_trabalhou = Number(in_trabalhou.value)
+        var anos_para_aposentar = Number(sel_trabalhou.value)
+
+        var aposentadoria = anos_para_aposentar - anos_trabalhou
+
+        div_aposentadoria.innerHTML = `Você ainda terá que trabalhar por mais ${aposentadoria} anos para se aposentar`
+    }
+</script>

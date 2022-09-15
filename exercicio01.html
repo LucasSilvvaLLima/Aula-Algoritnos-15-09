@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 01</title>
+</head>
+<body>
+    <h2>Qual a classe dos Heróis?</h2>
+    <select name="" id="sel_heroi" onchange="herois()">
+        
+        <option value="S">Metal Night</option>
+        <option value="A">Mascara Doce</option>
+        <option value="S">Prisioneiro Puri Puri</option>
+        <option value="B">Fubuki</option>
+        <option value="C">Cavaleiro sem Licença</option>
+    </select><br><br>
+    <div id="div_classe_heroi"></div>
+</body>
+</html>
+
+<script>
+    function herois(){
+        var heroi = sel_heroi.value
+        div_classe_heroi.innerHTML = `Esse(a) Herói(na) é de Classe ${heroi} `
+        
+    }
+</script>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 06</title>
+</head>
+<body>
+    <h2>Estações do ano:</h2>
+    <select name="" id="sel_estacao" onchange="imagem()">
+        <option value="">- Escholhe Estação - </option>
+        <option value="img/primavera.jpg">Primavera</option>
+        <option value="img/verao.png">Verão</option>
+        <option value="img/outono.jpeg">Outono</option>
+        <option value="img/inverno.jpg">Inverno</option>
+    </select>
+    <br>
+    <img src=""  id="img_estacao" style=" width:200px;">
+    
+</body>
+</html>
+
+<script>
+    function imagem(){
+        img_estacao.src = sel_estacao.value
+    }
+</script>

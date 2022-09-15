@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 04</title>
+</head>
+<body>
+    <h2>Oração</h2>
+    <select name="" id="sel_oracao" onchange="orar()">
+        <option value="Que eu leve Amor">Onde houver ódio</option>
+        <option value="Que eu leve Perdão">Onde houver ofensa</option>
+        <option value="Que eu leve União">Onde houver discórdia</option>
+        <option value="Que eu leve Fé">Onde houver duvida</option>
+    </select>
+</body>
+</html>
+
+<script>
+    function orar(){
+        alert(`${sel_oracao.value}`)
+    }
+</script>
